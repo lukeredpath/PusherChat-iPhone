@@ -1,2 +1,4 @@
 .DS_Store
 PusherChat-iPhone/PusherSettings.h
+*.xcodeproj/xcuserdata
+*.xcodeproj/*.xcworkspace/xcuserdata
