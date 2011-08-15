@@ -13,6 +13,7 @@
 #import "PusherChatService.h"
 #import "PusherChatUser.h"
 #import "PusherChatMessage.h"
+#import "Macros.h"
 
 
 @interface PusherChatMonitor ()
@@ -100,6 +101,27 @@
   NSInteger userID = [[memberData objectForKey:@"user_id"] integerValue];
   PusherChatUser *user = [chat userWithID:userID];
   [chat userDidLeave:user];
+}
+
+@end
+
+#pragma mark -
+
+@implementation PusherChatMonitorFactory
+
+@synthesize key;
+
++ (id)defaultFactory
+{
+  DEFINE_SHARED_INSTANCE_USING_BLOCK(^{
+    return [[self alloc] init];
+  });
+}
+
+- (PusherChatMonitor *)monitorForChat:(PusherChat *)chat
+{
+  PTPusher *pusher = [PTPusher pusherWithKey:self.key connectAutomatically:NO];
+  return [[[PusherChatMonitor alloc] initWithPusher:pusher chat:chat] autorelease];
 }
 
 @end

@@ -75,6 +75,7 @@
 		A33E328E13F9E0930024EFBD /* PusherChatMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusherChatMonitor.m; sourceTree = "<group>"; };
 		A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPusher.xcodeproj; path = External/libPusher/libPusher.xcodeproj; sourceTree = "<group>"; };
 		A35EA93113F9E6EB000B57B0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A35EA93313F9E74F000B57B0 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		A339AD1913F9CA93001E776F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A35EA93313F9E74F000B57B0 /* Macros.h */,
 				A339AD1A13F9CA93001E776F /* PusherChat-iPhone-Info.plist */,
 				A339AD1B13F9CA93001E776F /* InfoPlist.strings */,
 				A339AD1E13F9CA93001E776F /* main.m */,

@@ -15,16 +15,16 @@
 @class PTPusherChannel;
 @class PusherChat;
 
-@interface PusherChatMonitorFactory : NSObject
-@property (nonatomic, copy) NSString *pusherKey;
-
-+ (id)defaultFactory;
-- (void)monitorForChat:(PusherChat *)chat;
-@end
-
 @interface PusherChatMonitor : NSObject <PTPusherDelegate, PTPusherPresenceChannelDelegate> {
   PusherChat *chat;
 }
 - (id)initWithPusher:(PTPusher *)aPusher chat:(PusherChat *)aChat;
 - (void)startMonitoring;
+@end
+
+@interface PusherChatMonitorFactory : NSObject
+@property (nonatomic, copy) NSString *key;
+
++ (id)defaultFactory;
+- (PusherChatMonitor *)monitorForChat:(PusherChat *)chat;
 @end
