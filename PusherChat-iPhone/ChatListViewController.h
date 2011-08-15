@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChatListViewController : UITableViewController
+@class PusherChatService;
 
+@interface ChatListViewController : UITableViewController {
+
+}
+@property (nonatomic, retain) PusherChatService *chatService;
 @end

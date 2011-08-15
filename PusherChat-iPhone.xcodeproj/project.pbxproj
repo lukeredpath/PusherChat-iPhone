@@ -62,6 +62,7 @@
 		A33E328313F9D4F10024EFBD /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
 		A33E328413F9D4F10024EFBD /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		A33E328513F9D4F10024EFBD /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		A33E328C13F9DDB70024EFBD /* PusherSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusherSettings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 				A339AD1B13F9CA93001E776F /* InfoPlist.strings */,
 				A339AD1E13F9CA93001E776F /* main.m */,
 				A339AD2013F9CA93001E776F /* PusherChat-iPhone-Prefix.pch */,
+				A33E328C13F9DDB70024EFBD /* PusherSettings.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -352,6 +354,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PusherChat-iPhone/PusherChat-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "PusherChat-iPhone/PusherChat-iPhone-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -368,6 +374,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PusherChat-iPhone/PusherChat-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "PusherChat-iPhone/PusherChat-iPhone-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
