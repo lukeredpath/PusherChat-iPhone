@@ -30,15 +30,18 @@
   [super dealloc];
 }
 
-- (void)viewDidLoad
+- (void)setChats:(NSArray *)chats
 {
-  [super viewDidLoad];
+  [_chats autorelease];
+  _chats = [chats retain];
+  
+  [self.tableView reloadData];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+#pragma mark - Actions
+
+- (void)refreshChats
 {
-  [super viewDidAppear:animated];
-  
   [self.chatService fetchAvailableChatsWithCompletionHandler:^(BOOL successful, NSArray *chats) {
     if (successful) {
       self.chats = chats;
@@ -49,6 +52,24 @@
       [alert release];
     }
   }];
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  
+  // create a refresh button so users can reload chats whenever they want
+  UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshChats)];
+  [self.navigationItem setRightBarButtonItem:refreshButton];
+  [refreshButton release];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+  [super viewDidAppear:animated];
+  [self refreshChats];
 }
 
 #pragma mark - UITableView data source methods

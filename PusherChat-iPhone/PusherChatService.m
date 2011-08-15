@@ -122,7 +122,7 @@
 {
   [[LRResty client] post:[self resource:@"/api/join"] payload:nil withBlock:^(LRRestyResponse *response) {
     if (response.status == 201) {
-      PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[response objectFromJSON]];
+      PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[[response objectFromJSON] objectForKey:@"user"]];
       completionHandler(YES, user);
       [user release];
     }
@@ -139,7 +139,7 @@
       NSMutableArray *chats = [NSMutableArray array];
       
       for (NSDictionary *chatDictionary in [response objectFromJSON]) {
-        PusherChat *chat = [[PusherChat alloc] initWithDictionaryFromService:chatDictionary];
+        PusherChat *chat = [[PusherChat alloc] initWithDictionaryFromService:[chatDictionary objectForKey:@"chat"]];
         [chats addObject:chat];
         [chat release];
       }
