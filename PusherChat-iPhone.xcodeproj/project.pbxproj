@@ -19,13 +19,34 @@
 		A33E326D13F9CED60024EFBD /* PusherChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E326C13F9CED60024EFBD /* PusherChatMessage.m */; };
 		A33E327013F9CEE40024EFBD /* PusherChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E326F13F9CEE40024EFBD /* PusherChatUser.m */; };
 		A33E327513F9D2850024EFBD /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33E327413F9D2850024EFBD /* LRResty.framework */; };
-		A33E328613F9D4F10024EFBD /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E327813F9D4F10024EFBD /* CDataScanner.m */; };
-		A33E328713F9D4F10024EFBD /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E327B13F9D4F10024EFBD /* CDataScanner_Extensions.m */; };
-		A33E328813F9D4F10024EFBD /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E327D13F9D4F10024EFBD /* NSDictionary_JSONExtensions.m */; };
-		A33E328913F9D4F10024EFBD /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328013F9D4F10024EFBD /* CJSONDeserializer.m */; };
-		A33E328A13F9D4F10024EFBD /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328213F9D4F10024EFBD /* CJSONScanner.m */; };
-		A33E328B13F9D4F10024EFBD /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328413F9D4F10024EFBD /* CJSONSerializer.m */; };
+		A33E328F13F9E0940024EFBD /* PusherChatMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328E13F9E0930024EFBD /* PusherChatMonitor.m */; };
+		A33E32E013F9E1F20024EFBD /* libPusher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33E32DD13F9E1E40024EFBD /* libPusher.a */; };
+		A35EA93213F9E6EB000B57B0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35EA93113F9E6EB000B57B0 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A33E32DA13F9E1E40024EFBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = SampleApp;
+		};
+		A33E32DC13F9E1E40024EFBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3D1D2B71158013F009A12AD;
+			remoteInfo = libPusher;
+		};
+		A33E32DE13F9E1E40024EFBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3A1A0EB115813E2001EF877;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A339AD0E13F9CA93001E776F /* PusherChat-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PusherChat-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,20 +70,11 @@
 		A33E326E13F9CEE40024EFBD /* PusherChatUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusherChatUser.h; sourceTree = "<group>"; };
 		A33E326F13F9CEE40024EFBD /* PusherChatUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusherChatUser.m; sourceTree = "<group>"; };
 		A33E327413F9D2850024EFBD /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LRResty.framework; path = "PusherChat-iPhone/Frameworks/LRResty.framework"; sourceTree = "<group>"; };
-		A33E327713F9D4F10024EFBD /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
-		A33E327813F9D4F10024EFBD /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
-		A33E327A13F9D4F10024EFBD /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
-		A33E327B13F9D4F10024EFBD /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
-		A33E327C13F9D4F10024EFBD /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
-		A33E327D13F9D4F10024EFBD /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
-		A33E327F13F9D4F10024EFBD /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
-		A33E328013F9D4F10024EFBD /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
-		A33E328113F9D4F10024EFBD /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
-		A33E328213F9D4F10024EFBD /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
-		A33E328313F9D4F10024EFBD /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
-		A33E328413F9D4F10024EFBD /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
-		A33E328513F9D4F10024EFBD /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 		A33E328C13F9DDB70024EFBD /* PusherSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusherSettings.h; sourceTree = "<group>"; };
+		A33E328D13F9E0930024EFBD /* PusherChatMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusherChatMonitor.h; sourceTree = "<group>"; };
+		A33E328E13F9E0930024EFBD /* PusherChatMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusherChatMonitor.m; sourceTree = "<group>"; };
+		A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPusher.xcodeproj; path = External/libPusher/libPusher.xcodeproj; sourceTree = "<group>"; };
+		A35EA93113F9E6EB000B57B0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35EA93213F9E6EB000B57B0 /* CFNetwork.framework in Frameworks */,
+				A33E32E013F9E1F20024EFBD /* libPusher.a in Frameworks */,
 				A339AD1313F9CA93001E776F /* UIKit.framework in Frameworks */,
 				A339AD1513F9CA93001E776F /* Foundation.framework in Frameworks */,
 				A339AD1713F9CA93001E776F /* CoreGraphics.framework in Frameworks */,
@@ -100,7 +114,8 @@
 		A339AD1113F9CA93001E776F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A33E327613F9D4BC0024EFBD /* TouchJSON */,
+				A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */,
+				A35EA93113F9E6EB000B57B0 /* CFNetwork.framework */,
 				A33E327413F9D2850024EFBD /* LRResty.framework */,
 				A339AD1213F9CA93001E776F /* UIKit.framework */,
 				A339AD1413F9CA93001E776F /* Foundation.framework */,
@@ -161,44 +176,20 @@
 				A33E326C13F9CED60024EFBD /* PusherChatMessage.m */,
 				A33E326E13F9CEE40024EFBD /* PusherChatUser.h */,
 				A33E326F13F9CEE40024EFBD /* PusherChatUser.m */,
+				A33E328D13F9E0930024EFBD /* PusherChatMonitor.h */,
+				A33E328E13F9E0930024EFBD /* PusherChatMonitor.m */,
 			);
 			name = PusherChat;
 			sourceTree = "<group>";
 		};
-		A33E327613F9D4BC0024EFBD /* TouchJSON */ = {
+		A33E32D013F9E1E40024EFBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A33E327713F9D4F10024EFBD /* CDataScanner.h */,
-				A33E327813F9D4F10024EFBD /* CDataScanner.m */,
-				A33E327913F9D4F10024EFBD /* Extensions */,
-				A33E327E13F9D4F10024EFBD /* JSON */,
+				A33E32DB13F9E1E40024EFBD /* SampleApp.app */,
+				A33E32DD13F9E1E40024EFBD /* libPusher.a */,
+				A33E32DF13F9E1E40024EFBD /* UnitTests.octest */,
 			);
-			name = TouchJSON;
-			sourceTree = "<group>";
-		};
-		A33E327913F9D4F10024EFBD /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A33E327A13F9D4F10024EFBD /* CDataScanner_Extensions.h */,
-				A33E327B13F9D4F10024EFBD /* CDataScanner_Extensions.m */,
-				A33E327C13F9D4F10024EFBD /* NSDictionary_JSONExtensions.h */,
-				A33E327D13F9D4F10024EFBD /* NSDictionary_JSONExtensions.m */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A33E327E13F9D4F10024EFBD /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				A33E327F13F9D4F10024EFBD /* CJSONDeserializer.h */,
-				A33E328013F9D4F10024EFBD /* CJSONDeserializer.m */,
-				A33E328113F9D4F10024EFBD /* CJSONScanner.h */,
-				A33E328213F9D4F10024EFBD /* CJSONScanner.m */,
-				A33E328313F9D4F10024EFBD /* CJSONSerializer.h */,
-				A33E328413F9D4F10024EFBD /* CJSONSerializer.m */,
-				A33E328513F9D4F10024EFBD /* JSONRepresentation.h */,
-			);
-			path = JSON;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +230,42 @@
 			mainGroup = A339AD0313F9CA93001E776F;
 			productRefGroup = A339AD0F13F9CA93001E776F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A33E32D013F9E1E40024EFBD /* Products */;
+					ProjectRef = A33E32CF13F9E1E40024EFBD /* libPusher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A339AD0D13F9CA93001E776F /* PusherChat-iPhone */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A33E32DB13F9E1E40024EFBD /* SampleApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SampleApp.app;
+			remoteRef = A33E32DA13F9E1E40024EFBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A33E32DD13F9E1E40024EFBD /* libPusher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPusher.a;
+			remoteRef = A33E32DC13F9E1E40024EFBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A33E32DF13F9E1E40024EFBD /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = A33E32DE13F9E1E40024EFBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A339AD0C13F9CA93001E776F /* Resources */ = {
@@ -269,12 +290,7 @@
 				A339AD3713F9CB63001E776F /* PusherChatService.m in Sources */,
 				A33E326D13F9CED60024EFBD /* PusherChatMessage.m in Sources */,
 				A33E327013F9CEE40024EFBD /* PusherChatUser.m in Sources */,
-				A33E328613F9D4F10024EFBD /* CDataScanner.m in Sources */,
-				A33E328713F9D4F10024EFBD /* CDataScanner_Extensions.m in Sources */,
-				A33E328813F9D4F10024EFBD /* NSDictionary_JSONExtensions.m in Sources */,
-				A33E328913F9D4F10024EFBD /* CJSONDeserializer.m in Sources */,
-				A33E328A13F9D4F10024EFBD /* CJSONScanner.m in Sources */,
-				A33E328B13F9D4F10024EFBD /* CJSONSerializer.m in Sources */,
+				A33E328F13F9E0940024EFBD /* PusherChatMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +375,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/External/libPusher/Library ${SRCROOT}/External/libPusher/Vendor/TouchJSON/Source/** ${SRCROOT}/External/libPusher/Vendor/Zimt/src/Zimt/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,6 +396,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/External/libPusher/Library ${SRCROOT}/External/libPusher/Vendor/TouchJSON/Source/** ${SRCROOT}/External/libPusher/Vendor/Zimt/src/Zimt/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,7 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PTPusherDelegate.h"
+#import "PTPusherPresenceChannelDelegate.h"
 
-@interface PusherChatMonitor : NSObject
 
+@class PTPusher;
+@class PTPusherChannel;
+@class PusherChat;
+
+@interface PusherChatMonitorFactory : NSObject
+@property (nonatomic, copy) NSString *pusherKey;
+
++ (id)defaultFactory;
+- (void)monitorForChat:(PusherChat *)chat;
+@end
+
+@interface PusherChatMonitor : NSObject <PTPusherDelegate, PTPusherPresenceChannelDelegate> {
+  PusherChat *chat;
+}
+- (id)initWithPusher:(PTPusher *)aPusher chat:(PusherChat *)aChat;
+- (void)startMonitoring;
 @end

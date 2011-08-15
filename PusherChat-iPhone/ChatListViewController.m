@@ -72,7 +72,7 @@
   [self refreshChats];
 }
 
-#pragma mark - UITableView data source methods
+#pragma mark - UITableView data/delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -92,6 +92,11 @@
   PusherChat *chat = [self.chats objectAtIndex:indexPath.row];
   cell.textLabel.text = chat.description;
   return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  
 }
 
 @end
