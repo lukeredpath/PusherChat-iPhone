@@ -14,8 +14,7 @@
 		A339AD1F13F9CA93001E776F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD1E13F9CA93001E776F /* main.m */; };
 		A339AD2313F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */; };
 		A339AD2613F9CA93001E776F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A339AD2413F9CA93001E776F /* MainWindow.xib */; };
-		A339AD2913F9CA93001E776F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD2813F9CA93001E776F /* RootViewController.m */; };
-		A339AD2C13F9CA93001E776F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A339AD2A13F9CA93001E776F /* RootViewController.xib */; };
+		A339AD2913F9CA93001E776F /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD2813F9CA93001E776F /* ChatListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +22,15 @@
 		A339AD1213F9CA93001E776F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A339AD1413F9CA93001E776F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A339AD1613F9CA93001E776F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A339AD1A13F9CA93001E776F /* PusherChat-iPhone-Info.plist */ = {isa = PBXFileReference; path = "PusherChat-iPhone-Info.plist"; sourceTree = "<group>"; };
+		A339AD1A13F9CA93001E776F /* PusherChat-iPhone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PusherChat-iPhone-Info.plist"; sourceTree = "<group>"; };
 		A339AD1C13F9CA93001E776F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A339AD1E13F9CA93001E776F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A339AD2013F9CA93001E776F /* PusherChat-iPhone-Prefix.pch */ = {isa = PBXFileReference; path = "PusherChat-iPhone-Prefix.pch"; sourceTree = "<group>"; };
-		A339AD2113F9CA93001E776F /* PusherChat_iPhoneAppDelegate.h */ = {isa = PBXFileReference; path = PusherChat_iPhoneAppDelegate.h; sourceTree = "<group>"; };
+		A339AD2013F9CA93001E776F /* PusherChat-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PusherChat-iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		A339AD2113F9CA93001E776F /* PusherChat_iPhoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PusherChat_iPhoneAppDelegate.h; sourceTree = "<group>"; };
 		A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusherChat_iPhoneAppDelegate.m; sourceTree = "<group>"; };
 		A339AD2513F9CA93001E776F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A339AD2713F9CA93001E776F /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
-		A339AD2813F9CA93001E776F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		A339AD2B13F9CA93001E776F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		A339AD2713F9CA93001E776F /* ChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatListViewController.h; sourceTree = "<group>"; };
+		A339AD2813F9CA93001E776F /* ChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +77,8 @@
 		A339AD1813F9CA93001E776F /* PusherChat-iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				A339AD2113F9CA93001E776F /* PusherChat_iPhoneAppDelegate.h */,
-				A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */,
-				A339AD2413F9CA93001E776F /* MainWindow.xib */,
-				A339AD2713F9CA93001E776F /* RootViewController.h */,
-				A339AD2813F9CA93001E776F /* RootViewController.m */,
-				A339AD2A13F9CA93001E776F /* RootViewController.xib */,
+				A339AD3313F9CAFD001E776F /* Resources */,
+				A339AD3213F9CAF0001E776F /* Classes */,
 				A339AD1913F9CA93001E776F /* Supporting Files */,
 			);
 			path = "PusherChat-iPhone";
@@ -99,6 +93,25 @@
 				A339AD2013F9CA93001E776F /* PusherChat-iPhone-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A339AD3213F9CAF0001E776F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A339AD2113F9CA93001E776F /* PusherChat_iPhoneAppDelegate.h */,
+				A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */,
+				A339AD2713F9CA93001E776F /* ChatListViewController.h */,
+				A339AD2813F9CA93001E776F /* ChatListViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A339AD3313F9CAFD001E776F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A339AD2413F9CA93001E776F /* MainWindow.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +166,6 @@
 			files = (
 				A339AD1D13F9CA93001E776F /* InfoPlist.strings in Resources */,
 				A339AD2613F9CA93001E776F /* MainWindow.xib in Resources */,
-				A339AD2C13F9CA93001E776F /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +178,7 @@
 			files = (
 				A339AD1F13F9CA93001E776F /* main.m in Sources */,
 				A339AD2313F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m in Sources */,
-				A339AD2913F9CA93001E776F /* RootViewController.m in Sources */,
+				A339AD2913F9CA93001E776F /* ChatListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +199,6 @@
 				A339AD2513F9CA93001E776F /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		A339AD2A13F9CA93001E776F /* RootViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A339AD2B13F9CA93001E776F /* en */,
-			);
-			name = RootViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
