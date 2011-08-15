@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A339AD1313F9CA93001E776F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A339AD1213F9CA93001E776F /* UIKit.framework */; };
+		A339AD1513F9CA93001E776F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A339AD1413F9CA93001E776F /* Foundation.framework */; };
+		A339AD1713F9CA93001E776F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A339AD1613F9CA93001E776F /* CoreGraphics.framework */; };
+		A339AD1D13F9CA93001E776F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A339AD1B13F9CA93001E776F /* InfoPlist.strings */; };
+		A339AD1F13F9CA93001E776F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD1E13F9CA93001E776F /* main.m */; };
+		A339AD2313F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */; };
+		A339AD2613F9CA93001E776F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A339AD2413F9CA93001E776F /* MainWindow.xib */; };
+		A339AD2913F9CA93001E776F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD2813F9CA93001E776F /* RootViewController.m */; };
+		A339AD2C13F9CA93001E776F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A339AD2A13F9CA93001E776F /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A339AD0E13F9CA93001E776F /* PusherChat-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PusherChat-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A339AD1213F9CA93001E776F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A339AD1413F9CA93001E776F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A339AD1613F9CA93001E776F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A339AD1A13F9CA93001E776F /* PusherChat-iPhone-Info.plist */ = {isa = PBXFileReference; path = "PusherChat-iPhone-Info.plist"; sourceTree = "<group>"; };
+		A339AD1C13F9CA93001E776F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A339AD1E13F9CA93001E776F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A339AD2013F9CA93001E776F /* PusherChat-iPhone-Prefix.pch */ = {isa = PBXFileReference; path = "PusherChat-iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		A339AD2113F9CA93001E776F /* PusherChat_iPhoneAppDelegate.h */ = {isa = PBXFileReference; path = PusherChat_iPhoneAppDelegate.h; sourceTree = "<group>"; };
+		A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusherChat_iPhoneAppDelegate.m; sourceTree = "<group>"; };
+		A339AD2513F9CA93001E776F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A339AD2713F9CA93001E776F /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		A339AD2813F9CA93001E776F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A339AD2B13F9CA93001E776F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A339AD0B13F9CA93001E776F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A339AD1313F9CA93001E776F /* UIKit.framework in Frameworks */,
+				A339AD1513F9CA93001E776F /* Foundation.framework in Frameworks */,
+				A339AD1713F9CA93001E776F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A339AD0313F9CA93001E776F = {
+			isa = PBXGroup;
+			children = (
+				A339AD1813F9CA93001E776F /* PusherChat-iPhone */,
+				A339AD1113F9CA93001E776F /* Frameworks */,
+				A339AD0F13F9CA93001E776F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A339AD0F13F9CA93001E776F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A339AD0E13F9CA93001E776F /* PusherChat-iPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A339AD1113F9CA93001E776F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A339AD1213F9CA93001E776F /* UIKit.framework */,
+				A339AD1413F9CA93001E776F /* Foundation.framework */,
+				A339AD1613F9CA93001E776F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A339AD1813F9CA93001E776F /* PusherChat-iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A339AD2113F9CA93001E776F /* PusherChat_iPhoneAppDelegate.h */,
+				A339AD2213F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m */,
+				A339AD2413F9CA93001E776F /* MainWindow.xib */,
+				A339AD2713F9CA93001E776F /* RootViewController.h */,
+				A339AD2813F9CA93001E776F /* RootViewController.m */,
+				A339AD2A13F9CA93001E776F /* RootViewController.xib */,
+				A339AD1913F9CA93001E776F /* Supporting Files */,
+			);
+			path = "PusherChat-iPhone";
+			sourceTree = "<group>";
+		};
+		A339AD1913F9CA93001E776F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A339AD1A13F9CA93001E776F /* PusherChat-iPhone-Info.plist */,
+				A339AD1B13F9CA93001E776F /* InfoPlist.strings */,
+				A339AD1E13F9CA93001E776F /* main.m */,
+				A339AD2013F9CA93001E776F /* PusherChat-iPhone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A339AD0D13F9CA93001E776F /* PusherChat-iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A339AD2F13F9CA93001E776F /* Build configuration list for PBXNativeTarget "PusherChat-iPhone" */;
+			buildPhases = (
+				A339AD0A13F9CA93001E776F /* Sources */,
+				A339AD0B13F9CA93001E776F /* Frameworks */,
+				A339AD0C13F9CA93001E776F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PusherChat-iPhone";
+			productName = "PusherChat-iPhone";
+			productReference = A339AD0E13F9CA93001E776F /* PusherChat-iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A339AD0513F9CA93001E776F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "LJR Software Limited";
+			};
+			buildConfigurationList = A339AD0813F9CA93001E776F /* Build configuration list for PBXProject "PusherChat-iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A339AD0313F9CA93001E776F;
+			productRefGroup = A339AD0F13F9CA93001E776F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A339AD0D13F9CA93001E776F /* PusherChat-iPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A339AD0C13F9CA93001E776F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A339AD1D13F9CA93001E776F /* InfoPlist.strings in Resources */,
+				A339AD2613F9CA93001E776F /* MainWindow.xib in Resources */,
+				A339AD2C13F9CA93001E776F /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A339AD0A13F9CA93001E776F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A339AD1F13F9CA93001E776F /* main.m in Sources */,
+				A339AD2313F9CA93001E776F /* PusherChat_iPhoneAppDelegate.m in Sources */,
+				A339AD2913F9CA93001E776F /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A339AD1B13F9CA93001E776F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A339AD1C13F9CA93001E776F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A339AD2413F9CA93001E776F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A339AD2513F9CA93001E776F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A339AD2A13F9CA93001E776F /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A339AD2B13F9CA93001E776F /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A339AD2D13F9CA93001E776F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A339AD2E13F9CA93001E776F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A339AD3013F9CA93001E776F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PusherChat-iPhone/PusherChat-iPhone-Prefix.pch";
+				INFOPLIST_FILE = "PusherChat-iPhone/PusherChat-iPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A339AD3113F9CA93001E776F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PusherChat-iPhone/PusherChat-iPhone-Prefix.pch";
+				INFOPLIST_FILE = "PusherChat-iPhone/PusherChat-iPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A339AD0813F9CA93001E776F /* Build configuration list for PBXProject "PusherChat-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A339AD2D13F9CA93001E776F /* Debug */,
+				A339AD2E13F9CA93001E776F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A339AD2F13F9CA93001E776F /* Build configuration list for PBXNativeTarget "PusherChat-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A339AD3013F9CA93001E776F /* Debug */,
+				A339AD3113F9CA93001E776F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A339AD0513F9CA93001E776F /* Project object */;
+}
