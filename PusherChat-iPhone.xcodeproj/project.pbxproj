@@ -18,6 +18,13 @@
 		A339AD3713F9CB63001E776F /* PusherChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = A339AD3613F9CB63001E776F /* PusherChatService.m */; };
 		A33E326D13F9CED60024EFBD /* PusherChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E326C13F9CED60024EFBD /* PusherChatMessage.m */; };
 		A33E327013F9CEE40024EFBD /* PusherChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E326F13F9CEE40024EFBD /* PusherChatUser.m */; };
+		A33E327513F9D2850024EFBD /* LRResty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33E327413F9D2850024EFBD /* LRResty.framework */; };
+		A33E328613F9D4F10024EFBD /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E327813F9D4F10024EFBD /* CDataScanner.m */; };
+		A33E328713F9D4F10024EFBD /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E327B13F9D4F10024EFBD /* CDataScanner_Extensions.m */; };
+		A33E328813F9D4F10024EFBD /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E327D13F9D4F10024EFBD /* NSDictionary_JSONExtensions.m */; };
+		A33E328913F9D4F10024EFBD /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328013F9D4F10024EFBD /* CJSONDeserializer.m */; };
+		A33E328A13F9D4F10024EFBD /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328213F9D4F10024EFBD /* CJSONScanner.m */; };
+		A33E328B13F9D4F10024EFBD /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E328413F9D4F10024EFBD /* CJSONSerializer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,20 @@
 		A33E326C13F9CED60024EFBD /* PusherChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusherChatMessage.m; sourceTree = "<group>"; };
 		A33E326E13F9CEE40024EFBD /* PusherChatUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusherChatUser.h; sourceTree = "<group>"; };
 		A33E326F13F9CEE40024EFBD /* PusherChatUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusherChatUser.m; sourceTree = "<group>"; };
+		A33E327413F9D2850024EFBD /* LRResty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LRResty.framework; path = "PusherChat-iPhone/Frameworks/LRResty.framework"; sourceTree = "<group>"; };
+		A33E327713F9D4F10024EFBD /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		A33E327813F9D4F10024EFBD /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		A33E327A13F9D4F10024EFBD /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		A33E327B13F9D4F10024EFBD /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		A33E327C13F9D4F10024EFBD /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		A33E327D13F9D4F10024EFBD /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		A33E327F13F9D4F10024EFBD /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		A33E328013F9D4F10024EFBD /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		A33E328113F9D4F10024EFBD /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		A33E328213F9D4F10024EFBD /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		A33E328313F9D4F10024EFBD /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		A33E328413F9D4F10024EFBD /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		A33E328513F9D4F10024EFBD /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,7 @@
 				A339AD1313F9CA93001E776F /* UIKit.framework in Frameworks */,
 				A339AD1513F9CA93001E776F /* Foundation.framework in Frameworks */,
 				A339AD1713F9CA93001E776F /* CoreGraphics.framework in Frameworks */,
+				A33E327513F9D2850024EFBD /* LRResty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +99,8 @@
 		A339AD1113F9CA93001E776F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A33E327613F9D4BC0024EFBD /* TouchJSON */,
+				A33E327413F9D2850024EFBD /* LRResty.framework */,
 				A339AD1213F9CA93001E776F /* UIKit.framework */,
 				A339AD1413F9CA93001E776F /* Foundation.framework */,
 				A339AD1613F9CA93001E776F /* CoreGraphics.framework */,
@@ -137,6 +161,42 @@
 				A33E326F13F9CEE40024EFBD /* PusherChatUser.m */,
 			);
 			name = PusherChat;
+			sourceTree = "<group>";
+		};
+		A33E327613F9D4BC0024EFBD /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A33E327713F9D4F10024EFBD /* CDataScanner.h */,
+				A33E327813F9D4F10024EFBD /* CDataScanner.m */,
+				A33E327913F9D4F10024EFBD /* Extensions */,
+				A33E327E13F9D4F10024EFBD /* JSON */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+		A33E327913F9D4F10024EFBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A33E327A13F9D4F10024EFBD /* CDataScanner_Extensions.h */,
+				A33E327B13F9D4F10024EFBD /* CDataScanner_Extensions.m */,
+				A33E327C13F9D4F10024EFBD /* NSDictionary_JSONExtensions.h */,
+				A33E327D13F9D4F10024EFBD /* NSDictionary_JSONExtensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A33E327E13F9D4F10024EFBD /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A33E327F13F9D4F10024EFBD /* CJSONDeserializer.h */,
+				A33E328013F9D4F10024EFBD /* CJSONDeserializer.m */,
+				A33E328113F9D4F10024EFBD /* CJSONScanner.h */,
+				A33E328213F9D4F10024EFBD /* CJSONScanner.m */,
+				A33E328313F9D4F10024EFBD /* CJSONSerializer.h */,
+				A33E328413F9D4F10024EFBD /* CJSONSerializer.m */,
+				A33E328513F9D4F10024EFBD /* JSONRepresentation.h */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +267,12 @@
 				A339AD3713F9CB63001E776F /* PusherChatService.m in Sources */,
 				A33E326D13F9CED60024EFBD /* PusherChatMessage.m in Sources */,
 				A33E327013F9CEE40024EFBD /* PusherChatUser.m in Sources */,
+				A33E328613F9D4F10024EFBD /* CDataScanner.m in Sources */,
+				A33E328713F9D4F10024EFBD /* CDataScanner_Extensions.m in Sources */,
+				A33E328813F9D4F10024EFBD /* NSDictionary_JSONExtensions.m in Sources */,
+				A33E328913F9D4F10024EFBD /* CJSONDeserializer.m in Sources */,
+				A33E328A13F9D4F10024EFBD /* CJSONScanner.m in Sources */,
+				A33E328B13F9D4F10024EFBD /* CJSONSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +344,11 @@
 		A339AD3013F9CA93001E776F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/PusherChat-iPhone/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PusherChat-iPhone/PusherChat-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "PusherChat-iPhone/PusherChat-iPhone-Info.plist";
@@ -289,6 +360,11 @@
 		A339AD3113F9CA93001E776F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/PusherChat-iPhone/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PusherChat-iPhone/PusherChat-iPhone-Prefix.pch";
 				INFOPLIST_FILE = "PusherChat-iPhone/PusherChat-iPhone-Info.plist";

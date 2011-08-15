@@ -1790,9 +1790,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>335139344.11876601</real>
-		<string>{690, 876}</string>
-		<string>{1158, 0}</string>
+		<real>335140480.18157202</real>
+		<string>{2230, 1863}</string>
+		<string>{3812, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2465,7 +2465,7 @@
 				<integer>218</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>335139333.04996198</real>
+			<real>335140479.55168098</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -2476,7 +2476,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 23:15</string>
+		<string>Today at 23:34</string>
 		<integer>234</integer>
 		<string>PusherChat-iPhone</string>
 		<dict>
@@ -2750,11 +2750,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>424</integer>
+					<integer>423</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>425</integer>
+					<integer>424</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -2851,7 +2851,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>415</integer>
+					<integer>414</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -2918,7 +2918,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>261</integer>
+					<integer>15</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3667,10 +3667,10 @@
 				</dict>
 			</array>
 		</dict>
-		<real>335139344.12128699</real>
-		<string>{690, 876}</string>
-		<string>{1158, 0}</string>
-		<string>@implementation PusherChat</string>
+		<real>335140480.18403798</real>
+		<string>{2230, 1863}</string>
+		<string>{3812, 0}</string>
+		<string>-sendMessage:toChat:</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -3704,7 +3704,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {1080, 707}}</string>
+		<string>{{0, 0}, {1080, 952}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4170,7 +4170,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>375</integer>
+					<integer>377</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4396,7 +4396,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>409</integer>
+					<integer>411</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4454,23 +4454,17 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>221</integer>
+					<integer>409</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>326</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>324</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>321</integer>
+					<integer>410</integer>
 				</dict>
 			</array>
 		</dict>
 		<string>PusherChat-iPhone</string>
+		<string>Frameworks</string>
+		<string>TouchJSON</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4479,14 +4473,6 @@
 			</dict>
 			<key>NS.objects</key>
 			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>410</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>411</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>412</integer>
@@ -4525,63 +4511,10 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>221</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>326</integer>
+					<integer>409</integer>
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>46</integer>
-			</dict>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>408</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>221</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>326</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>324</integer>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>46</integer>
-			</dict>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>408</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>221</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>414</integer>
-				</dict>
-			</array>
-		</dict>
-		<string>Resources</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4599,7 +4532,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>416</integer>
+					<integer>415</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4613,15 +4546,15 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>417</integer>
+					<integer>416</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>419</integer>
+					<integer>418</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>421</integer>
+					<integer>420</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4650,7 +4583,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>418</integer>
+					<integer>417</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4680,7 +4613,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>420</integer>
+					<integer>419</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4706,11 +4639,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>422</integer>
+					<integer>421</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>423</integer>
+					<integer>422</integer>
 				</dict>
 			</array>
 		</dict>

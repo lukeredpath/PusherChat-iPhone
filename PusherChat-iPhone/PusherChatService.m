@@ -8,7 +8,12 @@
 
 #import "PusherChatService.h"
 #import "PusherChatUser.h"
+#import <LRResty/LRResty.h>
+#import "CJSONDeserializer.h"
 
+@interface LRRestyResponse (PusherChatExtensions)
+- (id)objectFromJSON;
+@end
 
 @interface PusherChat ()
 - (void)addUser:(PusherChatUser *)user;
@@ -38,6 +43,11 @@
   [messages release];
   [channel release];
   [super dealloc];
+}
+
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"Chat %d", self.chatID];
 }
 
 - (PusherChatUser *)userWithID:(NSInteger)userID
@@ -103,14 +113,62 @@
   [super dealloc];
 }
 
+- (NSString *)resource:(NSString *)path
+{
+  return [serviceURL stringByAppendingPathComponent:path];
+}
+
+- (void)joinChat:(PusherChat *)chat withCompletionHandler:(void (^)(BOOL, PusherChatUser *))completionHandler
+{
+  [[LRResty client] post:[self resource:@"/api/join"] payload:nil withBlock:^(LRRestyResponse *response) {
+    if (response.status == 201) {
+      PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[response objectFromJSON]];
+      completionHandler(YES, user);
+      [user release];
+    }
+    else {
+      completionHandler(NO, nil);
+    }
+  }];
+}
+
 - (void)fetchAvailableChatsWithCompletionHandler:(void (^)(BOOL, NSArray *))completionHandler
 {
-  
+  [[LRResty client] get:[self resource:@"/chats"] withBlock:^(LRRestyResponse *response) {
+    if (response.status == 200) {
+      NSMutableArray *chats = [NSMutableArray array];
+      
+      for (NSDictionary *chatDictionary in [response objectFromJSON]) {
+        PusherChat *chat = [[PusherChat alloc] initWithDictionaryFromService:chatDictionary];
+        [chats addObject:chat];
+        [chat release];
+      }
+      completionHandler(YES, chats);
+    }
+    else {
+      completionHandler(NO, nil);
+    }
+  }];
 }
 
 - (void)sendMessage:(NSString *)message toChat:(PusherChat *)chat
 {
+  NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+
+  [parameters setObject:[NSNumber numberWithInteger:chat.chatID] forKey:@"chat_id"];
+  [parameters setObject:message forKey:@"message"];
   
+  // no need to handle the response to this, if it works we will receive an event from pusher
+  [[LRResty client] post:[self resource:@"/api/post_message"] payload:parameters withBlock:nil];
+}
+
+@end
+
+@implementation LRRestyResponse (PusherChatExtensions)
+
+- (id)objectFromJSON
+{
+  return [[CJSONDeserializer deserializer] deserialize:[self responseData] error:nil];
 }
 
 @end
