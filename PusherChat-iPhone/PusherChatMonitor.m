@@ -123,7 +123,7 @@
 
 - (void)presenceChannel:(PTPusherPresenceChannel *)channel memberAdded:(NSDictionary *)memberData
 {
-  PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:memberData];
+  PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[memberData objectForKey:@"chat_user"]];
   [chat userDidJoin:user];
   [user release];
 }
