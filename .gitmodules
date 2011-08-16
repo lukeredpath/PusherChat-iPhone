@@ -1,3 +1,6 @@
 [submodule "External/libPusher"]
 	path = External/libPusher
 	url = git://github.com/lukeredpath/libPusher.git
+[submodule "External/SSMessagesViewController"]
+	path = External/SSMessagesViewController
+	url = https://github.com/samsoffes/ssmessagesviewcontroller.git

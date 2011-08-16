@@ -25,6 +25,7 @@
 @synthesize chatID;
 @synthesize channel;
 @synthesize delegate;
+@synthesize users;
 
 - (id)initWithDictionaryFromService:(NSDictionary *)dictionary
 {
@@ -72,7 +73,7 @@
   [users removeAllObjects];
   
   for (PusherChatUser *user in currentUsers) {
-    
+    [self addUser:user];
   }
   [self.delegate chatDidConnect:self];
 }
@@ -122,7 +123,7 @@
 {
   [[LRResty client] post:[self resource:@"/api/join"] payload:nil withBlock:^(LRRestyResponse *response) {
     if (response.status == 201) {
-      PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[[response objectFromJSON] objectForKey:@"user"]];
+      PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[[response objectFromJSON] objectForKey:@"chat_user"]];
       completionHandler(YES, user);
       [user release];
     }

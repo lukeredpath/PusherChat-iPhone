@@ -8,6 +8,8 @@
 
 #import "ChatListViewController.h"
 #import "PusherChatService.h"
+#import "PusherChatMonitor.h"
+#import "ChatViewController.h"
 
 
 @interface ChatListViewController ()
@@ -96,7 +98,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  
+  PusherChat *chat = [self.chats objectAtIndex:indexPath.row];
+  ChatViewController *chatController = [[ChatViewController alloc] init];
+  chatController.chat = chat;
+  chatController.chatService = self.chatService;
+  chatController.chatMonitor = [[PusherChatMonitorFactory defaultFactory] monitorForChat:chat];
+  [self.navigationController pushViewController:chatController animated:YES];
+  [chatController release];
 }
 
 @end

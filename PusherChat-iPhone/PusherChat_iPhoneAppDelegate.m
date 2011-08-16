@@ -10,10 +10,12 @@
 #import "PusherSettings.h"
 #import "ChatListViewController.h"
 #import "PusherChatService.h"
+#import "PusherChatMonitor.h"
 
 
 // assumes a local instance running using pow.cx
 #define kPUSHER_CHAT_SERVICE_URL @"http://pusherchat.dev"
+
 
 @implementation PusherChat_iPhoneAppDelegate
 
@@ -23,6 +25,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  // configure the Pusher API key, so we can monitor chats
+  [[PusherChatMonitorFactory defaultFactory] setKey:kPUSHER_API_KEY];
+  
+  // create an instance of the chat service to communicate with the web API
   PusherChatService *chatService = [[PusherChatService alloc] initWithServiceURL:kPUSHER_CHAT_SERVICE_URL];
   self.chatListController.chatService = chatService;
   [chatService release];

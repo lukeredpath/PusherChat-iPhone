@@ -16,6 +16,9 @@
 #import "Macros.h"
 
 
+// the URL used to authenticate users when connect to the presence channel
+#define kPUSHER_CHAT_AUTH_URL    @"http://pusherchat.dev/api/authenticate?user_id=%d"
+
 @interface PusherChatMonitor ()
 @property (nonatomic, readonly) PTPusher *pusher;
 @property (nonatomic, retain) PTPusherChannel *channel;
@@ -56,12 +59,41 @@
   }
 }
 
+- (void)stopMonitoring
+{
+  [self.pusher unsubscribeFromChannel:self.channel];
+}
+
+- (void)setUser:(PusherChatUser *)user
+{
+  // once we have a user, we can configure the Pusher authorisation URL
+  NSString *URLString = [NSString stringWithFormat:kPUSHER_CHAT_AUTH_URL, user.userID];
+  self.pusher.authorizationURL = [NSURL URLWithString:URLString];
+}
+
 #pragma mark - Pusher delegate methods
 
 - (void)pusher:(PTPusher *)pusher connectionDidConnect:(PTPusherConnection *)connection
 {
   self.channel = [pusher subscribeToPresenceChannelNamed:chat.channel delegate:self];
   [self bindToChatEvents];
+  
+  NSLog(@"Chat monitor connected to channel %@.", self.channel.name);
+}
+
+- (void)pusher:(PTPusher *)pusher connection:(PTPusherConnection *)connection failedWithError:(NSError *)error
+{
+  NSLog(@"Failed to start chat monitor, error: %@", error);
+}
+
+- (void)pusher:(PTPusher *)pusher connectionDidDisconnect:(PTPusherConnection *)connection
+{
+  NSLog(@"Chat monitor disconnected.");
+}
+
+- (void)pusher:(PTPusher *)pusher didFailToSubscribeToChannel:(PTPusherChannel *)channel withError:(NSError *)error
+{
+  NSLog(@"Chat monitor could not subscribe to chat channel, error: %@", error);
 }
 
 #pragma mark - Event bindings
@@ -82,7 +114,7 @@
   NSMutableArray *users = [NSMutableArray arrayWithCapacity:members.count];
   
   for (NSDictionary *userDictionary in members) {
-    PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:userDictionary];
+    PusherChatUser *user = [[PusherChatUser alloc] initWithDictionaryFromService:[userDictionary objectForKey:@"chat_user"]];
     [users addObject:user];
     [user release];
   }

@@ -14,12 +14,16 @@
 @class PTPusher;
 @class PTPusherChannel;
 @class PusherChat;
+@class PusherChatUser;
 
 @interface PusherChatMonitor : NSObject <PTPusherDelegate, PTPusherPresenceChannelDelegate> {
   PusherChat *chat;
 }
+
 - (id)initWithPusher:(PTPusher *)aPusher chat:(PusherChat *)aChat;
 - (void)startMonitoring;
+- (void)stopMonitoring;
+- (void)setUser:(PusherChatUser *)user;
 @end
 
 @interface PusherChatMonitorFactory : NSObject

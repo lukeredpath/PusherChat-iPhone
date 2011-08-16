@@ -20,6 +20,7 @@
 @property (nonatomic, readonly) NSInteger chatID;
 @property (nonatomic, readonly) NSString *channel;
 @property (nonatomic, assign) id<PusherChatDelegate> delegate;
+@property (nonatomic, readonly) NSDictionary *users;
 
 - (id)initWithDictionaryFromService:(NSDictionary *)dictionary;
 - (PusherChatUser *)userWithID:(NSInteger)userID;
@@ -38,6 +39,7 @@
 }
 - (id)initWithServiceURL:(NSString *)URLString;
 
+- (void)joinChat:(PusherChat *)chat withCompletionHandler:(void (^)(BOOL, PusherChatUser *))completionHandler;
 - (void)fetchAvailableChatsWithCompletionHandler:(void (^)(BOOL, NSArray *))completionHandler;
 - (void)sendMessage:(NSString *)message toChat:(PusherChat *)chat;
 

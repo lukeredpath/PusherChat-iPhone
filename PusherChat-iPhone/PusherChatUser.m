@@ -16,9 +16,21 @@
 - (id)initWithDictionaryFromService:(NSDictionary *)dictionary
 {
   if ((self = [super init])) {
-
+    userID = [[dictionary objectForKey:@"id"] integerValue];
+    nickname = [[dictionary objectForKey:@"nickname"] copy];
   }
   return self;
+}
+
+- (void)dealloc 
+{
+  [nickname release];
+  [super dealloc];
+}
+
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"User %d", self.userID];
 }
 
 + (id)keyForUserWithID:(NSInteger)userID
