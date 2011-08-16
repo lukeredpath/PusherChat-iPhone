@@ -21,6 +21,7 @@
 @property (nonatomic, readonly) NSString *channel;
 @property (nonatomic, assign) id<PusherChatDelegate> delegate;
 @property (nonatomic, readonly) NSDictionary *users;
+@property (nonatomic, readonly) NSArray *messages;
 
 - (id)initWithDictionaryFromService:(NSDictionary *)dictionary;
 - (PusherChatUser *)userWithID:(NSInteger)userID;

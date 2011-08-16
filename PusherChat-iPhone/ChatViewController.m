@@ -11,6 +11,7 @@
 #import "PusherChatMonitor.h"
 #import "PusherChatUser.h"
 #import "PusherChatMessage.h"
+#import <SSToolKit/SSTextField.h>
 
 
 @implementation ChatViewController
@@ -34,6 +35,9 @@
   [super viewDidLoad];
   
   self.title = self.chat.description;
+
+  // configure the messages input controls
+  [self.sendButton addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -72,7 +76,13 @@
 
 - (IBAction)sendMessage:(id)sender
 {
+  NSString *messageText = self.textField.text;
   
+  if (![messageText isEqualToString:@""]) {
+    [self.chatService sendMessage:messageText toChat:self.chat];
+  }
+  [self.textField resignFirstResponder];
+  [self.textField setText:nil];
 }
 
 #pragma mark - PusherChat delegate methods
@@ -94,7 +104,41 @@
 
 - (void)chat:(PusherChat *)chat didReceiveMessage:(PusherChatMessage *)message
 {
-  NSLog(@"Message from user %@: %@", message.user, message.message);
+  NSIndexPath *indexPathForMessage = [NSIndexPath indexPathForRow:[chat.messages indexOfObject:message] inSection:0];
+  
+  [self.tableView beginUpdates];
+  [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPathForMessage] withRowAnimation:UITableViewRowAnimationFade];
+  [self.tableView endUpdates];
+}
+
+#pragma mark - SSMessagesViewController customisation
+
+- (SSMessageStyle)messageStyleForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+  PusherChatMessage *message = [self.chat.messages objectAtIndex:indexPath.row];
+  
+  if (message.user.userID == self.user.userID) {
+    return SSMessageStyleLeft;
+  }
+  return SSMessageStyleRight;
+}
+
+- (NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+  PusherChatMessage *message = [self.chat.messages objectAtIndex:indexPath.row];
+  return message.message;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+  return self.chat.messages.count;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+  [self sendMessage:nil];
+  [textField resignFirstResponder];
+  return YES;
 }
 
 @end

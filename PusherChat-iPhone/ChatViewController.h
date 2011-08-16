@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PusherChatDelegate.h"
+#import "SSMessagesViewController.h"
 
 
 @class PusherChat;
@@ -15,7 +16,7 @@
 @class PusherChatUser;
 @class PusherChatService;
 
-@interface ChatViewController : UIViewController <PusherChatDelegate>
+@interface ChatViewController : SSMessagesViewController <PusherChatDelegate>
 
 @property (nonatomic, retain) PusherChatUser *user;
 @property (nonatomic, retain) PusherChat *chat;

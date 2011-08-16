@@ -26,6 +26,7 @@
 @synthesize channel;
 @synthesize delegate;
 @synthesize users;
+@synthesize messages;
 
 - (id)initWithDictionaryFromService:(NSDictionary *)dictionary
 {
